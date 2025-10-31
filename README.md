@@ -46,7 +46,7 @@ This project builds upon this previously developed single-cycle version of the V
 ### **Key improvements implemented in this project:**
 
 - Implementation of a **5-stage pipelined datapath** (IF, ID, EX, MEM, WB) — **Main Goal**
-  - Adoption of a **Harvard architecture**, replacing the previous **Von Neumann** design
+  - Mitigate **structural hazard** by Adopting a **Harvard architecture**, replacing the previous **Von Neumann** design
   - Introduction of **pipeline registers** between stages to enable instruction-level parallelism
   - Extension of the **control unit** to generate and manage new pipeline control signals
   - Integration of **hazard detection** units to identify data and control dependencies
@@ -71,6 +71,18 @@ This project builds upon this previously developed single-cycle version of the V
 - Zybo Board Z7-10
 
 ---
+
+## BUS Between Peripherals and CPU
+
+To achieve full integration of the peripherals, a **data bus** was implemented to connect the **CPU (Master)** with all **peripheral modules (Slaves)**.  
+The following diagrams illustrate the **bus interconnection architecture** and the corresponding **peripheral memory mapping** within the system’s address space.
+
+<p align="center">
+  <img src="Reports%20and%20docs/Images/VeSPA_BUS.png" alt="VeSPA Bus Architecture" width="48%">
+  <img src="Reports%20and%20docs/Images/PeripheralMapping.png" alt="Peripheral Mapping" width="30%">
+</p>
+
+
 
 ## New Datapath
 
