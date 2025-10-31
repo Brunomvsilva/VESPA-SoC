@@ -27,14 +27,23 @@ This version of the VeSPA processor was originally developed in a previous semes
 
 ### VeSPA Instruction Set Architecture
 
-![VeSPA ISA](Reports%20and%20docs/Images/VESPA_ISA_Table.png)  
-VeSPA Instruction Set Architecture (ISA)*
+<p align="center">
+  <img src="Reports%20and%20docs/Images/VESPA_ISA_Table.png" width="950">
+</p>
 
+### Baseline Design – VeSPA Single-Cycle CPU
 
+This project builds upon this previously developed single-cycle version of the VeSPA processor, presented below.
 
-## Objectives
+<p align="center">
+  <img src="Reports%20and%20docs/Images/Single-Cycle-Design.png" width="850">
+</p>
 
-**Key improvements implemented in this project include:**
+---
+
+## VeSPA Pipeline
+
+### **Key improvements implemented in this project:**
 
 - Implementation of a **5-stage pipelined datapath** (IF, ID, EX, MEM, WB) — **Main Goal**
   - Adoption of a **Harvard architecture**, replacing the previous **Von Neumann** design
@@ -62,6 +71,8 @@ VeSPA Instruction Set Architecture (ISA)*
 - Zybo Board Z7-10
 
 ---
+
+## New Datapath
 
 
 
