@@ -37,8 +37,8 @@ _An educational custom RISC-based processor implemented on FPGA with the purpose
 
 ➡️ The roles were:
 - CPU Pipeline (SoC Team) - Current Repository
-- [VESPA C Compiler Frontend](https://github.com/your-username/vespa-compiler-frontend)  
-- [VESPA C Compiler Backend](https://github.com/your-username/vespa-compiler-backend)
+- [VESPA C Compiler Frontend](https://github.com/Brunomvsilva/RocketC-VeSPA-Compiler.git)  
+- [VESPA C Compiler Backend](https://github.com/Brunomvsilva/RocketC-VeSPA-Compiler.git)
 
 ---
 
@@ -163,11 +163,9 @@ After generating the  `.coe` file you will need to input it manually in the VeSP
 
 You can compile C or Assembly code into VeSPA machine code using the following repositories:
 
-- **C Compiler (C to VeSPA Assembly and Binary/COE):**  
-  [https://github.com/.../vespa-compiler-frontend]
+- **C Compiler (C to VeSPA Assembly and Binary/COE):** [RocketC – VeSPA C Compiler](https://github.com/Brunomvsilva/RocketC-VeSPA-Compiler.git)
 
-- **Assembler / Backend (Assembly to Binary/COE):**  
-  [https://github.com/.../vespa-compiler-backend]
+- **Assembler / Backend (Assembly to Binary/COE):** [RocketC – VeSPA C Compiler](https://github.com/Brunomvsilva/RocketC-VeSPA-Compiler.git)
 
 ---
 
