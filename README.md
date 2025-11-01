@@ -186,7 +186,7 @@ The Python script is located here [`Python COE Script`](GenerateCOE/)
 
 ## Results
 
-Functional tests can be found in the [Report](VesPA_SOC.pdf) and the [Final Presentation](VeSPA_SingleCycle.pdf)
+Functional tests can be found in the [Report](VesPA_SOC.pdf) and the [Final Presentation](Presentations/SoC_Final.pptx)
 
 ### Performance & Timing Analysis
 
