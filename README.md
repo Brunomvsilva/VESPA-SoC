@@ -227,4 +227,10 @@ Therefore, even without experimental CPI values, it is reasonable to conclude th
 - Integrated and tested the **UART** and **GPIO** peripherals with the **CPU**
 - Assisted in writing the **technical documentation and final report**
 
+**Skills Learned**
+- Hardware Description with Verilog
+- Hardware Simulation & Testing (Vivado)
+- Digital Design & Processor Architecture
+- Teamwork and Problem Solving
+
 ---
