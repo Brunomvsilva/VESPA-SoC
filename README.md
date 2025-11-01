@@ -21,6 +21,7 @@ _An educational custom RISC-based processor implemented on FPGA with the purpose
   - [How to Run](#how-to-run)
     - [Option 1 – Using the VeSPA Compiler or Assembler](#option-1--using-the-vespa-compiler-or-assembler)
     - [Option 2 – Using the Python COE Generator Script](#option-2--using-the-python-coe-generator-script)
+  - [RocketSim - VeSPA Simulator](#rocketsim---vespa-simulator)
   - [Results](#results)
     - [Performance & Timing Analysis](#performance--timing-analysis)
     - [Clock Frequency Calculation](#clock-frequency-calculation)
