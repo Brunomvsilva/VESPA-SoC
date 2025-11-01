@@ -187,7 +187,7 @@ Because deploying software directly to the **Zybo Z7 FPGA** can be time-consumin
  
 This virtual environment allows developers to **run and debug VeSPA programs**, without requiring immediate execution on the FPGA.
 
-RocketSim details and implementation can be found **[here](https://github.com/Brunomvsilva/RocketC-VeSPA-Compiler/tree/main/Instruction%20Scheduler)**
+**RocketSim** details and implementation can be found **[here](https://github.com/Brunomvsilva/RocketC-VeSPA-Compiler/tree/main/Simulator)**
 
 ---
 
