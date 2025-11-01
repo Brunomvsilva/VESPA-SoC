@@ -180,6 +180,15 @@ The Python script is located here [`Python COE Script`](GenerateCOE/)
 
 ---
 
+## RocketSim - VeSPA Simulator
+
+Because deploying software directly to the **Zybo Z7 FPGA** can be time-consuming, and debugging capabilities on hardware are limited, a **virtual runtime environment** was created.  
+ 
+This virtual environment allows developers to **run and debug VeSPA programs**, without requiring immediate execution on the FPGA.
+
+RocketSim details and implementation can be found **[here](https://github.com/Brunomvsilva/RocketC-VeSPA-Compiler/tree/main/Instruction%20Scheduler)**
+
+---
 
 ## Results
 
