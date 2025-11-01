@@ -3,6 +3,31 @@
 _An educational custom RISC-based processor implemented on FPGA with the purpose of exploring and learning computer architecture and digital design._
 
 ---
+
+## Table of Contents
+
+- [VeSPA - System on Chip](#vespa---system-on-chip)
+  - [TEAM](#team)
+  - [Problem Statement](#problem-statement)
+  - [VeSPA Single Cycle](#vespa-single-cycle)
+    - [VeSPA Instruction Set Architecture](#vespa-instruction-set-architecture)
+    - [Baseline Design – VeSPA Single-Cycle CPU](#baseline-design--vespa-single-cycle-cpu)
+  - [VeSPA Pipeline](#vespa-pipeline)
+    - [Key improvements implemented in this project](#key-improvements-implemented-in-this-project)
+  - [Tools, Hardware and Language](#tools-hardware-and-language)
+  - [BUS Between Peripherals and CPU](#bus-between-peripherals-and-cpu)
+  - [New Datapath](#new-datapath)
+  - [VeSPA ABI – Application Binary Interface](#vespa-abi--application-binary-interface)
+  - [How to Run](#how-to-run)
+    - [Option 1 – Using the VeSPA Compiler or Assembler](#option-1--using-the-vespa-compiler-or-assembler)
+    - [Option 2 – Using the Python COE Generator Script](#option-2--using-the-python-coe-generator-script)
+  - [Results](#results)
+    - [Performance & Timing Analysis](#performance--timing-analysis)
+    - [Clock Frequency Calculation](#clock-frequency-calculation)
+  - [My Contributions to the VeSPA SoC](#my-contributions-to-the-vespa-soc)
+
+---
+
 ## TEAM  
 
 ➡️ This project was developed by a team of 20 students as part of the Computer Architecture course. 
@@ -127,7 +152,7 @@ This ABI specifies:
 
 ## How to Run
 
-To test or deploy this project on hardware or simulation, you will need the [development tools and hardware ](#tools--hardware-requirements) referenced (or similar).
+To test or deploy this project on hardware or simulation, you will need the [development tools and hardware ](##Tools,-Hardware-and-Language) referenced (or similar).
 
 You will first need to generate a `.coe` file (memory initialization file), which can be done in one of the following ways.
 
@@ -161,6 +186,8 @@ The Python script is located here [`Python COE Script`](GenerateCOE/)
 
 ## Results
 
+Functional tests can be found in the [Report](VesPA_SOC.pdf) and the [Final Presentation](VeSPA_SingleCycle.pdf)
+
 ### Performance & Timing Analysis
 
 <p align="center">
@@ -174,6 +201,23 @@ From the timing table, the longest delay occurs in the **Execute stage of the SU
 The CPU clock frequency is limited by the longest stage delay -> **1/6.93 ns**
 
 **→ Maximum clock frequency: ≈ 144 MHz**
+**Clock Frequency of Single cycle version was 100 MHz**
+
+Even though the CPI (cycles per instruction) was not experimentally measured, theoretical analysis already allows meaningful conclusions. The single-cycle VeSPA processor runs at 100 MHz, while the pipelined version can operate at 144 MHz due to a shorter critical path. In an ideal scenario (CPI = 1), this represents a 44% increase in instruction throughput.
+
+In practice, pipeline hazards (data and control hazards) introduce occasional stalls and flushes, increasing CPI slightly above 1. However, since the clock frequency is significantly higher, the overall throughput of the pipelined CPU is still superior to the single-cycle implementation. Additionally, the single-cycle CPU suffers CPI > 1 in load/store instructions, while the pipeline can sustain close to one instruction per cycle under normal execution.
+
+Therefore, even without experimental CPI values, it is reasonable to conclude that the pipelined VeSPA CPU offers higher throughput than the single-cycle version.
 
 
+---
 
+## My Contributions to the VeSPA SoC
+
+- Played a major role in designing and implementing the **pipelined datapath**
+- Actively participated in team discussions on data, control, and structural hazard mitigation strategies
+- Contributed to the design and development of the **Hazard Unit**
+- Integrated and tested the **UART** and **GPIO** peripherals with the **CPU**
+- Assisted in writing the **technical documentation and final report**
+
+---
