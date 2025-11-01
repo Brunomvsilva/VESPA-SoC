@@ -25,7 +25,8 @@ _An educational custom RISC-based processor implemented on FPGA with the purpose
   - [Results](#results)
     - [Performance & Timing Analysis](#performance--timing-analysis)
     - [Clock Frequency Calculation](#clock-frequency-calculation)
-  - [My Contributions to the VeSPA SoC](#my-contributions-to-the-vespa-soc)
+  - [My Contributions to the VeSPA SoC and Skills Learned](#my-contributions-to-the-vespa-soc-and-skills-learned)
+
 
 
 ---
@@ -219,7 +220,7 @@ Therefore, even without experimental CPI values, it is reasonable to conclude th
 
 ---
 
-## My Contributions to the VeSPA SoC
+## My Contributions to the VeSPA SoC and Skills Learned
 
 - Played a major role in designing and implementing the **pipelined datapath**
 - Actively participated in team discussions on data, control, and structural hazard mitigation strategies
