@@ -1,6 +1,6 @@
 # VeSPA - System on Chip
 
-_An educational custom RISC-based processor implemented on FPGA with the purpose of exploring and learning computer architecture and digital design._
+_A custom RISC-based processor implemented on FPGA for educational exploration of computer architecture and digital design._
 
 ---
 
