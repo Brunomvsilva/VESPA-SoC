@@ -1,6 +1,6 @@
 # VeSPA - System on Chip
 
-_A custom RISC-based processor implemented on FPGA for educational exploration of computer architecture and digital design._
+_A custom 5-stage pipelined CPU implemented on FPGA and based on the VeSPA ISA, designed for educational exploration of computer architecture and digital design._
 
 ---
 
