@@ -115,7 +115,7 @@ The following diagrams illustrate the **bus interconnection architecture** and t
 
 The diagram below presents the full pipelined datapath implemented in this project.  
 For better visibility and detail, it is also available in:
-- **High-resolution PNG image** → [View Datapath Image](Reports%20and%20docs/Images/VeSPAPipeline.png)
+- **PNG image** → [View Datapath Image](Reports%20and%20docs/Images/VeSPAPipeline.png)
 - **Final report** → [View final report](Reports%20and%20docs/VesPA_SOC.pdf)
 - **Presentation slides** → [View final presentation](Presentations/SoC_Final.pptx)
 
